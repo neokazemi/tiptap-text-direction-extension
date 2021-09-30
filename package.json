@@ -1,0 +1,29 @@
+{
+  "name": "tiptap-text-direction-extension",
+  "description": "text direction extension for tiptap",
+  "version": "1.0.0",
+  "homepage": "https://github.com/neokazemi/tiptap-text-direction-extension",
+  "keywords": [
+    "tiptap",
+    "tiptap extension"
+  ],
+  "contributors": [
+    {
+      "name": "Mostafa Kazemi",
+      "email": "neo.kazemi168@gmail.com",
+      "url": "https://github.com/neokazemi/tiptap-text-direction-extension"
+    }
+  ],
+  "license": "MIT",
+  "module": "src/index.js",
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "@tiptap/core": "^2.0.0-beta.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neokazemi/tiptap-text-direction-extension"
+  }
+}

@@ -1,2 +1,4 @@
 # tiptap-text-direction-extension
-Adds text direction (not alignment) to Tiptap
+Creator: [neokazemi](https://github.com/neokazemi)
+
+###Adds text direction (not alignment) to Tiptap.
