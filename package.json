@@ -1,18 +1,18 @@
 {
   "name": "tiptap-text-direction-extension",
   "description": "text direction extension for tiptap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/neokazemi/tiptap-text-direction-extension",
   "keywords": [
     "tiptap",
-    "tiptap extension"
+    "tiptap extension",
+    "direction",
+    "text-direction",
+    "text direction",
+    "extension"
   ],
   "contributors": [
-    {
-      "name": "Mostafa Kazemi",
-      "email": "neo.kazemi168@gmail.com",
-      "url": "https://github.com/neokazemi/tiptap-text-direction-extension"
-    }
+    "Mostafa Kazemi <neo.kazemi168@gmail.com> (https://github.com/neokazemi/tiptap-text-direction-extension)"
   ],
   "license": "MIT",
   "module": "src/index.js",
@@ -24,6 +24,27 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/neokazemi/tiptap-text-direction-extension"
-  }
+    "url": "git+https://github.com/neokazemi/tiptap-text-direction-extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neokazemi/tiptap-text-direction-extension/issues"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "prosemirror-commands": "^1.1.10",
+    "orderedmap": "^1.1.1",
+    "prosemirror-inputrules": "^1.1.3",
+    "prosemirror-model": "^1.14.3",
+    "prosemirror-schema-list": "^1.1.6",
+    "prosemirror-keymap": "^1.1.4",
+    "prosemirror-transform": "^1.3.3",
+    "prosemirror-state": "^1.3.4",
+    "prosemirror-view": "^1.20.1",
+    "w3c-keyname": "^2.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": ""
 }
