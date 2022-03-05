@@ -2,10 +2,12 @@ import { Extension } from '@tiptap/core';
 
 const TextDirection = Extension.create({
     name: 'textDirection',
-    defaultOptions: {
-        types: ['heading', 'paragraph'],
-        directions: ['ltr', 'rtl', 'auto'],
-        defaultDirection: 'auto',
+    addOptions() {
+        return {
+            types: ['heading', 'paragraph'],
+            directions: ['ltr', 'rtl', 'auto'],
+            defaultDirection: 'auto',
+        }
     },
     addGlobalAttributes() {
         return [
