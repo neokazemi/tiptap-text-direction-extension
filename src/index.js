@@ -31,7 +31,7 @@ const TextDirection = Extension.create({
                                 dir = attributes.dir.value
                             }
 
-                            if (!this.options.directions.include(attributes.dir)) {
+                            if (!this.options.directions.includes(attributes.dir)) {
                                 dir = this.options.defaultDirection
                             }
 
