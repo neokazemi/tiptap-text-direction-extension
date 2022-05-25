@@ -17,29 +17,14 @@ const TextDirection = Extension.create({
                     dir: {
                         default: this.options.defaultDirection,
                         parseHTML: element => {
-                            if (element.attributes.dir) {
+                            if (element.attributes.dir && this.options.directions.includes(element.attributes.dir)) {
                                 return element.attributes.dir.value
                             } else {
                                 return this.options.defaultDirection
                             }
                         },
                         renderHTML: attributes => {
-                            let dir = this.options.defaultDirection
-                            if (typeof attributes.dir === 'string') {
-                                dir = attributes.dir
-                            } else if (typeof attributes.dir === 'object' && typeof attributes.dir.value === 'string') {
-                                dir = attributes.dir.value
-                            }
-
-                            if (!this.options.directions.includes(attributes.dir)) {
-                                dir = this.options.defaultDirection
-                            }
-
-                            if (dir === this.options.defaultDirection) {
-                                return { dir: this.options.defaultDirection }
-                            }
-
-                            return { dir: dir }
+                            return { dir: attributes.dir }
                         },
                     },
                 },
