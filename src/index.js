@@ -4,9 +4,9 @@ const TextDirection = Extension.create({
     name: 'textDirection',
     addOptions() {
         return {
-            types: ['heading', 'paragraph'],
+            types: ['heading', 'paragraph', 'orderedList', 'bulletList'],
             directions: ['ltr', 'rtl', 'auto'],
-            defaultDirection: 'auto',
+            defaultDirection: null,
         }
     },
     addGlobalAttributes() {
